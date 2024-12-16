@@ -1,0 +1,83 @@
+/* Articles.module.scss */
+.container {
+  // padding: 2rem 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+  .main {
+    width: 100%;
+    padding: 5rem;
+  }
+  
+  .title {
+    font-size: 2rem;
+    margin-left: 8rem;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+
+  .articlesList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .articleCard {
+    display: flex;
+    align-items: flex-start;
+    background: #f1f0e8;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    padding: 1rem;
+    width: 100%;
+    max-width: 1100px;
+    
+    .imageWrapper {
+      display: flex;
+      img{
+        width: 300px;
+        height: 200px;
+        border-radius: 8px;
+      }
+    }
+
+    .articleDetails {
+      flex: 1;
+      padding: 0;
+      margin-left: 20px; // Mengatur jarak antara gambar dan detail artikel
+      h2 {
+        font-size: 1.8rem;
+        margin: 0.5rem 0;
+        color: #333;
+      }
+
+      .date,
+      .author {
+        font-size: 1rem;
+        color: #555;
+      }
+
+      .excerpt {
+        margin-top: 0.5rem;
+        color: #666;
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+/* Footer.module.scss */
+.footer {
+  width: 100%; /* Pastikan mengambil seluruh lebar layar */
+  background-color: #333; /* Warna latar belakang footer */
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem; /* Jarak dari konten atas */
+}

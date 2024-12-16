@@ -1,0 +1,96 @@
+.destination {
+  width: 100%;
+  margin: 10px 0;
+  color: #272927;
+  &__button {
+    margin: 30px 0 10px 0;
+    font-weight: bold;
+  }
+  &__wrapper {
+    max-height: 420px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+  }
+  &__wrapper::-webkit-scrollbar {
+    display: none;
+  }
+
+  &__table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+  }
+
+  &__thead {
+    background-color: #272927;
+    color: #fff;
+    text-align: left;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+
+  &__th,
+  &__td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+    vertical-align: top;
+    white-space: normal;
+    word-wrap: break-word;
+
+    // Mengatur lebar kolom secara eksplisit
+    &:nth-child(1) {
+      width: 40px;
+    } // Kolom #
+    &:nth-child(2) {
+      width: 150px;
+    } // Kolom Nama
+    &:nth-child(3) {
+      width: 200px;
+    } // Kolom Deskripsi
+    &:nth-child(4) {
+      width: 150px;
+    } // Kolom Lokasi
+    &:nth-child(5),
+    &:nth-child(6) {
+      width: 100px;
+    } // Kolom Jam Buka & Jam Tutup
+    &:nth-child(7) {
+      width: 150px;
+    } // Kolom Kontak
+    &:nth-child(8) {
+      width: 100px;
+    } // Kolom Gambar
+    &:nth-child(9) {
+      width: 100px;
+    } // Kolom Action
+    &__action {
+      display: flex;
+    }
+  }
+  &__action {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  &__buttonUpdate {
+    background-color: #ffb200;
+    color: #fff;
+    font-weight: bold;
+    &:hover {
+      background-color: #ffb300bb;
+    }
+  }
+  &__buttonDelete {
+    background-color: #b70404;
+    color: #fff;
+    font-weight: bold;
+    &:hover {
+      background-color: #b70404ce;
+    }
+  }
+  &__tbody {
+    background-color: #fff;
+  }
+}

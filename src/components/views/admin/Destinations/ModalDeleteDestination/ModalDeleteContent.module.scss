@@ -1,0 +1,11 @@
+.modal {
+  &__button {
+    margin-top: 20px;
+    background-color: #b70404;
+    color: #fff;
+    font-weight: bold;
+    &:hover {
+      background-color: #b70404ce;
+    }
+  }
+}

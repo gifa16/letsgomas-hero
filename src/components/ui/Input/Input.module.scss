@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  &__input {
+    padding: 10px;
+    background-color: #ffffff;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.185);
+    transition: border-color 0.3s ease;
+  }
+  &__input[type='number']::-webkit-inner-spin-button,
+  input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  &__input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+}
